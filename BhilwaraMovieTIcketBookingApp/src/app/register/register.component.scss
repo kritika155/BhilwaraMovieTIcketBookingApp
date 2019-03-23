@@ -1,0 +1,35 @@
+// .register{
+//     opacity: 0.6;
+// }
+
+ion-button{
+    --background: #062f77;
+}
+ion-content{
+    --background: url('/assets/bhill.jpg');
+    --background-size: cover;
+    --background-position: center;
+    --background-repeat: no-repeat;
+}
+ion-toolbar{
+    --background:red;  
+} 
+ion-label{
+    text-align: center;
+    margin-left: 130px;
+}
+ion-input{
+    background-color: white;
+}
+ion-input::placeholder{
+    color: #3880ff;
+}
+ion-card-header{
+   margin-left: 35px;
+   font-size: 25px;
+   color: #3880ff;
+
+}
+ion-input::placeholder{
+    color: #3880ff;
+}

@@ -1,0 +1,26 @@
+ion-content{
+    --background: url('/assets/bhilwara.jpg');
+    --background-size: cover;
+    --background-position: center;
+    --background-repeat: no-repeat;
+}
+// @media (min-width: 240px) and (max-width: 768px) {
+//     ion-content {
+//         --background{ 
+//         min-width: 100%; 
+//         display:block; 
+//         // --background: url('/assets/3.jpg');
+//         --background-repeat: no-repeat;
+//         --background-size: cover;
+//         --background-position: center;
+//     }
+
+//     }
+    
+// }
+ion-img{
+margin-top: 200px;
+}
+ion-toolbar{
+    --background:red;  
+} 
