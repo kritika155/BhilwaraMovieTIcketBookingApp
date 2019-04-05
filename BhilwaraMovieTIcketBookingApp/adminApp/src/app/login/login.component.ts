@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MovieService}  from '../movie.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router :Router,private movieService:MovieService) { }
 
   ngOnInit() {
   }
   login(form){
     console.log(form.value);
+}
+Login(){
+  this.router.navigate(['/movie']);
 }
 }
