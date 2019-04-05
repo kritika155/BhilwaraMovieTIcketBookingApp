@@ -1,0 +1,60 @@
+
+<div class="list" >
+    <button name="deleteAll"  (click)="deleteAll()" id="delete">deleteAll</button>
+    <button name="add"  routerLink="/add" id="add">AddMovies</button><hr>
+    <!-- <table >
+        <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Year</th> 
+          <th>Image_url</th>
+          <th>Production_house</th>
+          <th>Rating</th>
+          <th>Type</th>
+          <th>Language</th>
+          <th>Date</th>
+          
+
+        </thead> -->
+        <table >
+            <thead border="2"> 
+                <th>Id</th>
+                <th>Name</th>
+                <th>Year</th> 
+                <th>Image_url</th>
+                <th>Production_house</th>
+                <th>Rating</th>
+                <th>Type</th>
+                <th>Language</th>
+                <th>Date</th>
+                
+      
+              </thead>
+          <tbody *ngFor="let movie of list"> 
+             <td><img src={{movie.image_url}}></td>
+           
+            <!-- <span>{{movie.id}}</span> -->
+            <td>{{movie.name}}</td>
+            <td>{{movie.year}}</td>
+           
+            <td>{{movie.production_house}}</td>
+            <td>{{movie.rating}}</td>
+            <td>{{movie.type}}</td>
+            <td>{{movie.language}}</td>
+            <td>{{movie.date}}</td>
+  
+            <td><input type="button" name="edit" value="edit" (click)="onEdit(movie.id)"></td>
+  
+            <td><input type="button" name="delete" value="&times;" (click)="deleteMovie(movie)">
+              <!-- <td width="15%"><input type="button" name="edit" value="edit" (click)="editStudent(student)"> -->
+  
+            </td>
+            <td><input type="button" name="book" value="book" routerLink="/booking"></td>
+          </tbody>
+          <hr>
+        </table>
+        <!-- </tbody>
+</table><hr> --><hr><hr>
+
+
+</div>

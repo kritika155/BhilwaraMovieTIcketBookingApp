@@ -1,0 +1,21 @@
+<div>
+
+    <input type="number" placeholder="customer_id" name="customer_id" [(ngModel)]="booking.customer_id"><br>
+
+    <input type="numbert" placeholder="tickets" name="tickets" [(ngModel)]="booking.tickets"><br>
+    <input type="number" placeholder="movie_id" name="movie_id" [(ngModel)]="booking.movie_id"><br>
+    <input type="text" placeholder="movie_name" name="movie_name" [(ngModel)]="booking.movie_name"><br>
+    <input type="text" placeholder="movie_time" name="movie_time" [(ngModel)]="booking.movie_time"><br>
+    <input type="text" placeholder="theater" name="theater" [(ngModel)]="booking.theatre"><br>
+    <input type="text" placeholder="screen" name="screen" [(ngModel)]="booking.screen"><br>
+    <input type="text" placeholder="city" name="city" [(ngModel)]="booking.city"><br>
+    <input type="date" placeholder="movie_date" name="movie_date" [(ngModel)]="booking.movie_date"><br>
+    <input type="date" placeholder="date" name="date" [(ngModel)]="booking.date"><br>
+    <input type="number" placeholder="amount" name="amount" [(ngModel)]="booking.amount"><br>
+    <input type="number" placeholder="ticketprice" name="ticketprice" [(ngModel)]="booking.ticket_price"><br>
+  
+  <input type="button" value="Book movies" name="updatemovies" (click)="addBooking(booking)">
+  <input type="button" value="Next" name="Next" (click)="onSelect(booking)"><hr>
+ 
+
+</div>
